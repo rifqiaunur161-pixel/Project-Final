@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT Fest Kelompok</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+
+    <style>
+      /* paginnation */
+#pagination{
+  text-align: center;
+}
+
+  #pagination a.active {
+    background-color: #055e58; /* lebih gelap */
+    border: 2px solid #fff;
+  }
+
+
+
+#pagination a{
+  text-decoration: none;
+  background-color: #088178;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600 ;
+}
+
+#pagination a i{
+  font-size: 16px;
+  font-weight: 600;
+}
+    </style>
+
+
+
+
+  </head>
+
+  <body>
+    <section id="header">
+      <a href="#"><img src="img/logo.png" class="logo" alt="" /></a>
+
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active"  href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">Tentang</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li id="lg-bag">
+            <a href="#"><i class="far fa-shopping-bag cart-icon""></i></a>
+          </li>
+          <a href="#" id="close"><i class="far fa-times"></i></a>
+        </ul>
+      </div>
+
+      <!-- Dropdown keranjang -->
+<div id="cartDropdown">
+  <h4>Keranjang</h4>
+  <div id="cartItems"></div>
+  <div id="cartTotal">Total: Rp0</div>
+  <button id="checkoutBtn">Checkout</button>
+</div>
+
+      <div id="mobile">
+       
+        <a href="#"><i class="far fa-shopping-bag cart-icon"></i></a>
+         <i id="bar" class="fas fa-outdent"></i> 
+      </div>
+    </section>
+
+    <section id="page-header">
+      
+      <h2>#stayhome</h2>
+      <p>Lorem ipsum dolor sit adipisicing elit. Officia</p>
+    </section>
+
+    <section id="product1" class="section-p1">
+     
+      <div class="pro-container">
+        <div class="pro" onclick="window.location.href='sproduct.html';">
+          <img src="img/products/f1.jpg" alt="" />
+          <div class="des">
+            <span>Lorem.</span>
+            <h5>Baju Lebaran Baru</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.100.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href='sproduct2.html';">
+          <img src="img/products/f2.jpg" alt="" />
+          <div class="des">
+            <span>Lorem.</span>
+            <h5>Baju Lebaran Baru</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.100.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href='sproduct3.html';">
+          <img src="img/products/f3.jpg" alt="" />
+          <div class="des">
+            <span>Lorem.</span>
+            <h5>Baju Lebaran Baru</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.100.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro" onclick="window.location.href='sproduct4.html';">
+          <img src="img/products/f4.jpg" alt="" />
+          <div class="des">
+            <span>Lorem.</span>
+            <h5>Baju Lebaran Baru</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.100.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+      
+        <div class="pro">
+          <img src="img/products/n1.jpg" alt="" />
+          <div class="des">
+            <span>Lorem.</span>
+            <h5>Baju Lebaran Baru</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.100.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/n2.jpg" alt="" />
+          <div class="des">
+            <span>Lorem.</span>
+            <h5>Baju Lebaran Baru</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.100.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/n3.jpg" alt="" />
+          <div class="des">
+            <span>Lorem.</span>
+            <h5>Baju Lebaran Baru</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.100.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/n4.jpg" alt="" />
+          <div class="des">
+            <span>Lorem.</span>
+            <h5>Baju Lebaran Baru</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.100.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/n5.jpg" alt="" />
+          <div class="des">
+            <span>Lorem.</span>
+            <h5>Baju Lebaran Baru</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.100.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/n6.jpg" alt="" />
+          <div class="des">
+            <span>Lorem.</span>
+            <h5>Baju Lebaran Baru</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.100.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/n7.jpg" alt="" />
+          <div class="des">
+            <span>Lorem.</span>
+            <h5>Baju Lebaran Baru</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.100.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/n8.jpg" alt="" />
+          <div class="des">
+            <span>Lorem.</span>
+            <h5>Baju Lebaran Baru</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.100.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/n8.jpg" alt="" />
+          <div class="des">
+            <span>Lorem.</span>
+            <h5>Baju Lebaran Baru</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.100.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/n8.jpg" alt="" />
+          <div class="des">
+            <span>Lorem.</span>
+            <h5>Baju Lebaran Baru</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.100.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/n8.jpg" alt="" />
+          <div class="des">
+            <span>Lorem.</span>
+            <h5>Baju Lebaran Baru</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.100.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/n8.jpg" alt="" />
+          <div class="des">
+            <span>Lorem.</span>
+            <h5>Baju Lebaran Baru</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.100.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/n8.jpg" alt="" />
+          <div class="des">
+            <span>Lorem.</span>
+            <h5>Baju Lebaran Baru</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.100.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/n8.jpg" alt="" />
+          <div class="des">
+            <span>Lorem.</span>
+            <h5>Baju Lebaran Baru</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.100.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/n8.jpg" alt="" />
+          <div class="des">
+            <span>Lorem.</span>
+            <h5>Baju Lebaran Baru</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.100.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/products/n8.jpg" alt="" />
+          <div class="des">
+            <span>Lorem.</span>
+            <h5>Baju Lebaran Baru</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Rp.100.000,00</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="pagination" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+    </section>
+
+ 
+
+    <footer class="section-p1">
+      <div class="col">
+        <img class="logo" src="img/logo.png" alt="" />
+        <h4>Contact</h4>
+        <p><strong>Alamat:</strong> Politelnik Negeri Sriwijaya</p>
+        <p><strong>Phone:</strong> 0895617489466</p>
+        <p><strong>Hours:</strong> 10:00-18:00. Senin-Sabtu</p>
+        <div class="follow">
+          <h4>Follow us</h4>
+          <div class="icon">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contac Us</a>
+      </div>
+
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+
+
+
+      <div class="col create-by">
+        <h4>Create By</h4>
+        <p>Web Ini Dibikin Kami Ber-3</p>
+        <div class="row">
+            <img src="img/pay/app.jpg" alt="">
+            <img src="img/pay/play.jpg" alt="">
+        </div>
+        <p>@rifqii_arn  @BAKI  @ANWAR</p>
+       
+        
+
+      </div>
+
+      <div class="copyright">
+        <p>Lorem ipsum dolor sit. rifqi aunur</p>
+      </div>
+
+
+
+
+    </footer>
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
+
+
+    <script>
+  const products = document.querySelectorAll(".pro"); // ambil semua produk
+  const productsPerPage = 12; // maksimal produk per halaman
+  const totalPages = Math.ceil(products.length / productsPerPage);
+  let currentPage = 1;
+
+  function showPage(page) {
+    products.forEach((p, i) => {
+      p.style.display =
+        i >= (page - 1) * productsPerPage && i < page * productsPerPage
+          ? "block"
+          : "none";
+    });
+    renderPagination(page);
+  }
+
+  function renderPagination(page) {
+    const pagination = document.getElementById("pagination");
+    pagination.innerHTML = "";
+
+    // tombol prev
+    if (page > 1) {
+      const prev = document.createElement("a");
+      prev.href = "#";
+      prev.innerHTML = "&larr;";
+      prev.addEventListener("click", (e) => {
+        e.preventDefault();
+        currentPage--;
+        showPage(currentPage);
+      });
+      pagination.appendChild(prev);
+    }
+
+    // nomor halaman
+    for (let i = 1; i <= totalPages; i++) {
+      const link = document.createElement("a");
+      link.href = "#";
+      link.textContent = i;
+      if (i === page) link.classList.add("active");
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        currentPage = i;
+        showPage(currentPage);
+      });
+      pagination.appendChild(link);
+    }
+
+    // tombol next
+    if (page < totalPages) {
+      const next = document.createElement("a");
+      next.href = "#";
+      next.innerHTML = "&rarr;";
+      next.addEventListener("click", (e) => {
+        e.preventDefault();
+        currentPage++;
+        showPage(currentPage);
+      });
+      pagination.appendChild(next);
+    }
+  }
+
+  // tampilkan halaman pertama saat load
+  showPage(currentPage);
+</script>
+
+
+
+
+
+  </body>
+</html>
